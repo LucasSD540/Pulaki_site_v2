@@ -1,0 +1,253 @@
+html {
+    height: 100%;
+    background-color: rgba(24, 24, 202, 0.945);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
+main {
+  flex-grow: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  background-color: yellow;
+  height: 15vh;
+  max-width: 100%;
+}
+
+@font-face {
+    font-family: 'Snap ITC';
+    src: url("/font/design.graffiti.SNAP____.ttf");
+}
+
+/* header-nav */
+
+.inicio {
+  text-decoration: underline;
+}
+
+.nav-links {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 1000px;
+}
+
+ul {
+    list-style: none;
+}
+
+.ul-1 {
+  padding: 0 5%;
+}
+
+li {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+} 
+
+.pulaki-link {
+  text-decoration: none;
+  margin-left: 5rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    position: static;
+    width: auto;
+    margin-top: 1rem;
+  }
+
+  .pulaki-link {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-links {
+    margin-top: 1rem;
+  }
+}
+
+/* fim header  */
+
+.link-whatsapp {
+        position: fixed;
+        height: 60px;
+        width: 60px;
+        bottom: 150px;
+        right: 40px;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        z-index: 1000;
+}
+
+.whats-img {
+    height: 60px;
+    width: 60px;
+}
+
+.link-instagram {
+  position: fixed;
+      height: 70px;
+      width: 70px;
+      bottom: 75px;
+      right: 35px;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      z-index: 1000;
+}
+
+.insta-img {
+    height: 60px;
+    width: 60px;
+}
+
+.whats-img, .insta-img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .whats-img, .insta-img {
+    max-width: 40px;
+    height: auto;
+    padding-left: 5%;
+  }
+  .link-whatsapp {
+    bottom: 130px;
+  }
+}
+
+.footer-letras {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* text drop */
+
+#text-drop {
+    position: relative;
+    display: flex;
+    font-size: 50px;
+    font-family: arial;
+    font-weight: 900;
+    left: 10%;
+    top: 21%;
+  }
+  
+  .P {
+    opacity:0;
+    animation: drop .4s linear forwards;
+    color: red;
+    font-family: Snap ITC;
+  }
+  
+  .U {
+    opacity:0;
+    animation: drop .4s linear forwards .2s;
+    color: red;
+    font-family: Snap ITC;
+  }
+  
+  .L {
+    opacity:0;
+    animation: drop .4s linear forwards .4s;
+    color: red;
+    font-family: Snap ITC;
+  }
+  
+  .A {
+    opacity:0;
+    animation: drop .4s linear forwards .6s;
+    color: red;
+    font-family: Snap ITC;
+  }
+  
+  .K {
+    opacity:0;
+    animation: drop .4s linear forwards .8s;
+    color: red;
+    font-family: Snap ITC;
+  }
+
+  .I {
+    opacity:0;
+    animation: drop .4s linear forwards 1.2s;
+    color: red;
+    font-family: Snap ITC;
+  }
+  
+  @keyframes drop {
+    0% {transform: translateY(-200px) scaleY(0.9); opacity: 0;}
+    5% {opacity: .7;}
+    50% {transform: translateY(0px) scaleY(1); opacity: 1;}
+    65% {transform: translateY(-17px) scaleY(.9); opacity: 1;}
+    75% {transform: translateY(-22px) scaleY(.9); opacity: 1;}
+    100% {transform: translateY(0px) scaleY(1); opacity: 1;}
+  }
+
+footer {
+    margin-top: auto;
+    background-color: yellow;
+    width: 100%;
+    padding: 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 20vh;
+  }
+  #text-drop {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #text-drop, .pulaki-link {
+    left: -20%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-links {
+    display: none;
+  }
+}
