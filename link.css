@@ -49,7 +49,7 @@ main {
 /* brinquedos-imagens */
 
 .carousel-inner {
-  height: 700px; 
+  height: 800px; 
 }
 
 #img-1 {
@@ -58,5 +58,5 @@ main {
 
 footer {
   position: absolute;
-  bottom: -25%;
+  bottom: -20%;
 }
